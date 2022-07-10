@@ -760,6 +760,7 @@ def main():
     dp.add_handler(CommandHandler("help", help))
     dp.add_handler(CommandHandler("list", list))
     dp.add_handler(CommandHandler("whoami", whoami))
+    dp.add_handler(CommandHandler("save", save))
     dp.add_handler(CallbackQueryHandler(queryHandler))
     dp.add_handler(MessageHandler(Filters.text, messageHandler))
 
