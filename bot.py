@@ -740,8 +740,8 @@ def main():
     # Creates the Updater and pass it your bot's token.
     # Make sure to set use_context=True to use the new context based callbacks
     # Post version 12 this will no longer be necessary
-    TOKEN = '5423176144:AAEAHewAvanY5W4ImVC7P3RoPzlkAdzG0wA'#enter your token here
-    APP_NAME='https://helpwithoutprejudice.herokuapp.com/' #Edit the heroku app-name
+    TOKEN = '5426711061:AAETAeSxsjxVy5O2brVQAANKVu5uw-hauzo'#enter your token here
+    APP_NAME='https://hpw-testing.herokuapp.com/' #Edit the heroku app-name
 
     # Get the dispatcher to register handlers
     updater = Updater(TOKEN, use_context=True)
