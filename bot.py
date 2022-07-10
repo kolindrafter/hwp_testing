@@ -5,6 +5,7 @@ import pytz
 import re
 import numpy as np
 import time
+import json
 
 from telegram import *
 from telegram.ext import *
@@ -449,6 +450,13 @@ def whoami(update, context):
                str(update.message.chat.first_name) + " " + \
                str(update.message.chat.last_name)
     update.message.reply_text(text=response)
+
+def save(update, context):
+    if update.effective_chat.id in admin_cids:
+        with open('convert.txt', 'w') as convert_file:
+             convert_file.write(json.dumps(session_list_dic))
+
+
 
 def messageHandler(update: Update, context: CallbackContext):
 
